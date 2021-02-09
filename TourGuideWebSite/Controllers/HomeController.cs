@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ using TourGuideWebSite.Models;
 
 namespace TourGuideWebSite.Controllers
 {
+    
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -26,6 +28,8 @@ namespace TourGuideWebSite.Controllers
             var events = _db.Events.ToList(); 
             return new JsonResult(events);
         }
+
+       
         public IActionResult Excursion1()
         {
             return View();
@@ -82,6 +86,9 @@ namespace TourGuideWebSite.Controllers
             return View();
         }
 
+
+
+        [Authorize]
         public IActionResult Privacy()
         {
             return View();

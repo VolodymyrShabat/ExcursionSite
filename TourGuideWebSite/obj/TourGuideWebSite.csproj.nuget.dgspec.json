@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Volod\\source\\repos\\NEEWWWW\\TourGuideWebSite\\TourGuideWebSite.csproj": {}
+    "C:\\Users\\Volod\\source\\repos\\ExcursionSite\\TourGuideWebSite\\TourGuideWebSite.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Volod\\source\\repos\\NEEWWWW\\TourGuideWebSite\\TourGuideWebSite.csproj": {
+    "C:\\Users\\Volod\\source\\repos\\ExcursionSite\\TourGuideWebSite\\TourGuideWebSite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Volod\\source\\repos\\NEEWWWW\\TourGuideWebSite\\TourGuideWebSite.csproj",
+        "projectUniqueName": "C:\\Users\\Volod\\source\\repos\\ExcursionSite\\TourGuideWebSite\\TourGuideWebSite.csproj",
         "projectName": "TourGuideWebSite",
-        "projectPath": "C:\\Users\\Volod\\source\\repos\\NEEWWWW\\TourGuideWebSite\\TourGuideWebSite.csproj",
+        "projectPath": "C:\\Users\\Volod\\source\\repos\\ExcursionSite\\TourGuideWebSite\\TourGuideWebSite.csproj",
         "packagesPath": "C:\\Users\\Volod\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Volod\\source\\repos\\NEEWWWW\\TourGuideWebSite\\obj\\",
+        "outputPath": "C:\\Users\\Volod\\source\\repos\\ExcursionSite\\TourGuideWebSite\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -45,6 +45,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.2, )"
@@ -58,6 +66,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.1, )"
             }
           },
           "imports": [
