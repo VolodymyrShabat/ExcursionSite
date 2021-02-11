@@ -35,51 +35,6 @@ namespace TourGuideWebSite.Controllers
             return View();
         }
 
-        [HttpPost]
-        public JsonResult SaveEvent(Event e)
-        {
-            var status = false;
-
-                if (e.Id > 0)
-                {
-                    //Update the event
-                    var v = _db.Events.Where(a => a.Id == e.Id).FirstOrDefault();
-                    if (v != null)
-                    {
-                        v.Title = e.Title;
-                        v.StartDate = e.StartDate;
-                        v.EndDate = e.EndDate;
-                        v.Href = e.Href;
-                        v.Color = e.Color;
-                    }
-                }
-                else
-                {
-                    _db.Events.Add(e);
-                }
-                _db.SaveChangesAsync();
-                status = true;
-            
-            return new JsonResult (status);
-        }
-
-        [HttpPost]
-        public JsonResult DeleteEvent(int eventID)
-        {
-            var status = false;
-
-            var v = _db.Events.Where(a => a.Id == eventID).FirstOrDefault();
-            if (v != null)
-            {
-                _db.Events.Remove(v);
-                _db.SaveChangesAsync();
-                status = true;
-            }
-            return new JsonResult(status);
-        }
-
-
-
         public IActionResult Index()
         {
 
@@ -87,8 +42,6 @@ namespace TourGuideWebSite.Controllers
         }
 
 
-
-        [Authorize]
         public IActionResult Privacy()
         {
             return View();

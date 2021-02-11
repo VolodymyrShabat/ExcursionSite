@@ -308,3 +308,4 @@ C:\Users\Volod\source\repos\ExcursionSite\TourGuideWebSite\obj\Debug\net5.0\Razo
 C:\Users\Volod\source\repos\ExcursionSite\TourGuideWebSite\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\Volod\source\repos\ExcursionSite\TourGuideWebSite\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Users\Volod\source\repos\ExcursionSite\TourGuideWebSite\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\Volod\source\repos\ExcursionSite\TourGuideWebSite\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
